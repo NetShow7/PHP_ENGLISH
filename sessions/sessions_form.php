@@ -21,10 +21,18 @@
 			</table>
       <input type="submit">
       <?php
+        session_start();
         if (isset($_GET["mal"])) {
           printf("<br><br>Datuak txarto sartu dituzu!<br><img src=\"stop.jpg\">");
-        }
+        }elseif (isset($_SESSION["usuario"])) {
+          printf("<br><br>Kaixo ".session_name());
+
        ?>
+       <br>
+       <br>
+       <a href="Close_session.php">Close session</a>
+       <?php } ?>
+
     </form>
   </body>
 </html>

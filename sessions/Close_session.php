@@ -9,6 +9,6 @@
     <title></title>
   </head>
   <body>
-    <a href="Counting_pages.php"><b>Create new session</b></a>
+    <a href="sessions_form.php"><b>Create new session</b></a>
   </body>
 </html>
