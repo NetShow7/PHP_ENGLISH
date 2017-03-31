@@ -6,6 +6,8 @@ if (!isset($_SESSION["number_pages"])) {
 }else {
   $_SESSION["number_pages"]++;
 }
+session_name("Eneko");
+session_id("1");
 ?>
 
 <html>
@@ -17,8 +19,9 @@ if (!isset($_SESSION["number_pages"])) {
   <?php
   echo "You have seen ".$_SESSION["number_pages"]." pages <br> <br>";
   echo "Session id: ".session_id()."<br>";
-  echo "Session name: ".session_name("name")."<br>";
+  echo "Session name: ".session_name()."<br>";
   echo "Session time: ".date("20y/m/d H:i:s");
+
 
   ?>
   <br>
